@@ -1,0 +1,18 @@
+.heading {
+  & svg {
+    background-color: #fff;
+  }
+}
+.heading::before {
+  background-color: #000;
+}
+.input {
+  border: none;
+  outline: none;
+  color: #777;
+  border-bottom: 2px solid #ccc;
+}
+textarea {
+  resize: none;
+  height: 200px;
+}

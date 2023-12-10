@@ -1,0 +1,9 @@
+.home{
+  & .avatar {
+    width: 200px;
+  }
+  .heading {
+    color: #fff;
+    
+  }
+}

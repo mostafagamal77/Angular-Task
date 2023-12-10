@@ -1,0 +1,43 @@
+.heading::before {
+  background-color: #000;
+}
+.row {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  & .img-box {
+    position: relative;
+    cursor: pointer;
+  }
+  & .img-box::before {
+    content: "\2b";
+    font-family: "Font Awesome 6 Free";
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(127, 255, 212, 0.5);
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+  }
+
+  .img-box::after {
+  }
+  .img-box:hover::before {
+    width: 95%;
+    height: 100%;
+    opacity: 1;
+  }
+}
