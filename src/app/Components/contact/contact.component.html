@@ -1,15 +1,79 @@
-<section class="contact py-5 bg-white text-center">
-  <h2 class="text-uppercase heading my-4 mx-auto fw-bold fs-1">
-    Contact <i class="fa-solid fa-star"></i>
-  </h2>
-  <div class="container">
+<section class="contact py-4 bg-white text-center">
+  <h2 class="text-uppercase head mb-2 mx-auto fw-bold fs-1 position-relative">
+    contact section
 
-    <div class="form d-flex flex-column align-items-center ">
-      <input class="w-75 mb-3 py-4 fs-4 input" type="text" placeholder="Name">
-      <input class="w-75 mb-3 py-4 fs-4 input" type="email" placeholder="Email">
-      <input class="w-75 mb-3 py-4 fs-4 input" type="tel" placeholder="Phone Number">
-      <textarea class="w-75 mb-3 py-4 fs-4 input" placeholder="Message"></textarea>
-      <button class="btn btn-success fs-5 d-block">Send</button>
+    <div class="star">
+      <span class="one"></span>
+      <i class="fa-solid fa-star"></i>
+      <span class="two"></span>
+    </div>
+  </h2>
+  <div class="w-50 mx-auto p-3 mt-5 form">
+    <div class="container">
+      <div>
+        <div class="inp-group">
+          <label
+            [style.top]="upName ? '0' : '40px'"
+            [style.zIndex]="upName ? '1' : '-1'"
+            for="userName"
+            >userName :</label
+          >
+          <input
+            (keyup)="nameUp($event)"
+            class="form-control mb-3 py-4 fs-4 input"
+            id="userName"
+            type="text"
+            placeholder="userName"
+          />
+        </div>
+        <div class="inp-group">
+          <label
+            [style.top]="upAge ? '0' : '40px'"
+            [style.zIndex]="upAge ? '1' : '-1'"
+            for="userAge"
+            >userAge :</label
+          >
+          <input
+            (keyup)="ageUp($event)"
+            class="form-control mb-3 py-4 fs-4 input"
+            id="userAge"
+            type="text"
+            placeholder="userAge"
+          />
+        </div>
+        <div class="inp-group">
+          <label
+            [style.top]="upEmail ? '0' : '40px'"
+            [style.zIndex]="upEmail ? '1' : '-1'"
+            for="userEmail"
+            >userEmail :</label
+          >
+          <input
+            (keyup)="emailUp($event)"
+            class="form-control mb-3 py-4 fs-4 input"
+            id="userEmail"
+            type="email"
+            placeholder="userEmail"
+          />
+        </div>
+        <div class="inp-group">
+          <label
+            [style.top]="upPass ? '0' : '40px'"
+            [style.zIndex]="upPass ? '1' : '-1'"
+            for="userPassword"
+            >userPassword :</label
+          >
+          <input
+            (keyup)="passUp($event)"
+            class="form-control mb-3 py-4 fs-4 input"
+            id="userAge"
+            type="text"
+            placeholder="userPassword"
+          />
+        </div>
+
+        <button class="btn fs-5 d-block">send Message</button>
+      </div>
     </div>
   </div>
 </section>

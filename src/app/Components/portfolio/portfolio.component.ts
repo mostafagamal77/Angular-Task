@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./portfolio.component.css'],
 })
 export class PortfolioComponent {
-  
+  imgs_Src: string[] = [
+    './assets/imgs/cabin.png',
+    './assets/imgs/cake.png',
+    './assets/imgs/circus.png',
+    './assets/imgs/game.png',
+    './assets/imgs/safe.png',
+    './assets/imgs/submarine.png',
+  ];
 }

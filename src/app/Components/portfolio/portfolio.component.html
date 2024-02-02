@@ -1,26 +1,35 @@
-<section class="portfolio text-center">
-  <h2 class="text-uppercase heading my-5 mx-auto fw-bold fs-1">
-    portfolio <i class="fa-solid fa-star"></i>
-  </h2>
+<section class="portfolio text-center pt-4">
   <div class="container">
+    <h2 class="text-uppercase mb-3 mx-auto fw-bold fs-1 position-relative">
+      PORTFOLIO COMPONENT
+      <div class="star">
+        <span class="one"></span>
+        <i class="fa-solid fa-star"></i>
+        <span class="two"></span>
+      </div>
+    </h2>
     <div class="row g-4 gap-row-3">
-      <div class="img-box col-md-4">
-        <img class="img-fluid rounded-3" src="./assets/imgs/cabin.png" alt="portfolio img" />
-      </div>
-      <div class="img-box col-md-4">
-        <img class="img-fluid rounded-3" src="./assets/imgs/cake.png" alt="portfolio img" />
+      <div
+        class="img-box col-md-4"
+        *ngFor="let img of imgs_Src; let i = index"
+        data-bs-toggle="modal"
+        [attr.data-bs-target]="'#modal' + i"
+      >
+        <div>
+          <img class="img-fluid rounded-3" [src]="img" alt="portfolio img" />
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          [id]="'modal' + i"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <img class="img-fluid" [src]="img" alt="portfolio img" />
           </div>
-      <div class="img-box col-md-4">
-        <img class="img-fluid rounded-3" src="./assets/imgs/circus.png" alt="portfolio img" />
-      </div>
-      <div class="img-box col-md-4">
-        <img class="img-fluid rounded-3" src="./assets/imgs/game.png" alt="portfolio img" />
-      </div>
-      <div class="img-box col-md-4">
-        <img class="img-fluid rounded-3" src="./assets/imgs/safe.png" alt="portfolio img" />
-      </div>
-      <div class="img-box col-md-4">
-        <img class="img-fluid rounded-3" src="./assets/imgs/submarine.png" alt="portfolio img" />
+        </div>
       </div>
     </div>
   </div>

@@ -1,35 +1,50 @@
-<header>
+<nav class="navbar navbar-expand-lg py-4">
   <div class="container">
-    <nav class="d-flex align-items-center justify-content-between py-4">
-      <div class="logo fs-2">
-        <a class="text-white fw-bold" routerLink="home">Angular</a>
-      </div>
-      <ul class="d-flex align-items-center m-0">
-        <li>
+    <a
+      class="navbar-brand text-white fs-2 fw-bold text-uppercase"
+      routerLink="home"
+      >START FRAMEWORK</a
+    >
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item me-3">
           <a
-            class="ps-3 fs-5 text-capitalize text-white fw-bold"
-            routerLinkActive="active"
-            routerLink="portfolio"
-            >portfolio</a
-          >
-        </li>
-        <li>
-          <a
-            class="ps-3 fs-5 text-capitalize text-white fw-bold "
-            routerLinkActive="active"
+            class="nav-link text-white text-uppercase fw-bold mt-3 mt-md-0 px-2"
+            routerLinkActive="active rounded-3"
             routerLink="about"
             >about</a
           >
         </li>
-        <li>
+        <li class="nav-item me-3">
           <a
-            class="ps-3 fs-5 text-capitalize text-white fw-bold "
-            routerLinkActive="active"
+            class="nav-link text-white text-uppercase fw-bold mt-3 mt-md-0 px-2"
+            routerLinkActive="active rounded-3"
+            routerLink="portfolio"
+            >portfolio</a
+          >
+        </li>
+
+        <li class="nav-item me-3">
+          <a
+            class="nav-link text-white text-uppercase fw-bold mt-3 mt-md-0 px-2"
+            routerLinkActive="active rounded-3"
             routerLink="contact"
             >contact</a
           >
         </li>
       </ul>
-    </nav>
+    </div>
   </div>
-</header>
+</nav>

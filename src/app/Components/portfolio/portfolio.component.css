@@ -1,3 +1,6 @@
+.portfolio {
+  background-color: #fff;
+
 .heading::before {
   background-color: #000;
 }
@@ -22,22 +25,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(127, 255, 212, 0.5);
+    background-color: #1abc9ce6;
     color: #fff;
-    font-size: 3rem;
+    font-size: 6rem;
     font-weight: bold;
+    border-radius: 10px;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
     -ms-transition: var(--main-transition);
     -o-transition: var(--main-transition);
-  }
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
 
-  .img-box::after {
-  }
   .img-box:hover::before {
     width: 95%;
     height: 100%;
     opacity: 1;
   }
+}
 }

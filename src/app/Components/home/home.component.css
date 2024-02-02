@@ -1,9 +1,17 @@
 .home{
+  background-color: var(--sec-color);
+  min-height: calc(100vh - 125px);
   & .avatar {
-    width: 200px;
+    width: 250px;
   }
-  .heading {
+  .head {
     color: #fff;
-    
+    width: fit-content;
+    & span {
+      background-color: #fff;
+    }
+  }
+  & p {
+    font-size: 15px;
   }
 }

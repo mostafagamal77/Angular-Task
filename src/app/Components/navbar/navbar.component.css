@@ -1,7 +1,8 @@
-header {
-  background-color: var(--main-color);
 
+nav {
+  background-color: var(--main-color) !important;
   & li a {
+    width: fit-content;
     transition: var(--main-transition);
     -webkit-transition: var(--main-transition);
     -moz-transition: var(--main-transition);
@@ -9,9 +10,9 @@ header {
     -o-transition: var(--main-transition);
   }
 
-  & li a:hover,
   .active {
-    color: var(--sec-color) !important;
+    background-color: var(--sec-color) ;
+
   }
 }
 @media (max-width: 767px) {
